@@ -1,0 +1,15 @@
+@ModularApi_HostAddress = http://localhost:5000
+
+GET {{ModularApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{ModularApi_HostAddress}}/api/alpha
+Content-Type: application/json
+
+{
+  "Name": "ENTITY001"
+}
+
+###
