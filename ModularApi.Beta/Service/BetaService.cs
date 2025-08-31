@@ -9,7 +9,7 @@ public class BetaService : IBetaService
 {
     public void CreateBeta(string name)
     {
-        var newName = $"{name}-Beta";
+        var newName = $"{name}-BETA";
         Console.WriteLine($"BetaService Called: {newName}");
     }
 }

@@ -4,7 +4,7 @@ using ModuleApi.Common.Features.Beta.DTO;
 
 namespace ModularApi.Beta.Features.Commands;
 
-internal class CreateBetaCommandHandler(IBetaService betaService) : ICreateBetaCommandHandler
+internal class CreateBetaHandler(IBetaService betaService) : ICreateBetaHandler
 {
     public Task<CreateBetaResponse> Handle(CreateBetaCommand request, CancellationToken cancellationToken)
     {
