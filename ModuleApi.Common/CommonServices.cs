@@ -5,7 +5,7 @@ namespace ModuleApi.Common;
 
 public static class CommonServices
 {
-    public static void InitializeServices(IServiceCollection services)
+    public static void RegisterCommon(this IServiceCollection services)
     {
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
     }

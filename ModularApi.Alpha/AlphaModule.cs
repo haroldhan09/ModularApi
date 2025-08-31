@@ -1,12 +1,12 @@
-﻿using System.Reflection;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using ModularApi.Alpha.Service;
+using ModuleApi.Common.Module;
 
 namespace ModularApi.Alpha;
 
-public static class AlphaModule
+public class AlphaModule : IModule
 {
-    public static void InitializeServices(IServiceCollection services)
+    public void RegisterServices(IServiceCollection services)
     {
         services.AddScoped<IAlphaService, AlphaService>();
     }

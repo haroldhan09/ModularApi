@@ -1,4 +1,4 @@
-@AlphaApi_BaseAddress = http://localhost:5000/api/alpha
+@AlphaApi_BaseAddress = http://localhost:5223/api/alpha
 
 GET {{AlphaApi_BaseAddress}}/13
 Accept: application/json

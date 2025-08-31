@@ -7,7 +7,7 @@ using ModuleApi.Common.Features.Beta.Queries;
 namespace ModularApi.Alpha.Api;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/alpha")]
 public class AlphaController(IAlphaService alphaService, IMediator mediator)
 {
     [HttpGet("{alphaId}")]

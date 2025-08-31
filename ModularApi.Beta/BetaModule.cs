@@ -1,12 +1,13 @@
 ﻿using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using ModularApi.Beta.Service;
+using ModuleApi.Common.Module;
 
 namespace ModularApi.Beta;
 
-public static class BetaModule
+public class BetaModule : IModule
 {
-    public static void InitializeServices(IServiceCollection services)
+    public void RegisterServices(IServiceCollection services)
     {
         services.AddScoped<IBetaService, BetaService>();
         
